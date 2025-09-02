@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "aside grilla grilla grilla"
+    "footer footer footer footer";
+  min-height: 100vh;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(75, 220, 186);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 20px 20px; */
+  border: 1px solid white;
+}
+nav h3 {
+  color: rgb(173, 247, 99);
+}
+
+.barra_ofertas {
+  background-color: rgb(76, 76, 78);
+  width: 100%;
+  text-align: center;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(185, 192, 188);
+  display: flex;
+  flex-direction: column;
+}
+
+aside h3 {
+  color: white;
+  padding-left: 5px;
+}
+
+.producto_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.producto_menu:hover {
+  background-color: rgb(75, 220, 186);
+}
+
+.producto_menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+.grilla {
+  grid-area: grilla;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 30%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: ghostwhite;
+  padding: 0px;
+  margin: 10px;
+  border: 1px solid #ddd;
+}
+
+.product-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  padding: 10px 0px;
+}
+.product-card p {
+  flex-grow: 1;
+  width: 350px;
+  height: 50px;
+}
+
+.product-card span {
+  font-size: medium;
+  font-weight: 600;
+  padding: 5px 0px;
+}
+
+.comprar {
+  background-color: rgb(75, 220, 186);
+  margin: 0px 0px;
+  padding: 5px 0px;
+  width: 100%;
+}
+
+.comprar:hover {
+  background-color: rgb(186, 186, 240);
+}
+
+.comprar a {
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(186, 186, 240);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  height: 10vh;
+}
