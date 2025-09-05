@@ -11,11 +11,13 @@ body {
 
 .container-grid {
   display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "nav nav nav nav"
     "aside grilla grilla grilla"
     "footer footer footer footer";
-  min-height: 100vh;
+  height: 100vh;
 }
 
 nav {
@@ -37,6 +39,8 @@ nav h3 {
   background-color: rgb(76, 76, 78);
   width: 100%;
   text-align: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 aside {
@@ -71,7 +75,7 @@ aside h3 {
 .grilla {
   grid-area: grilla;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .product-card {
@@ -89,8 +93,8 @@ aside h3 {
 }
 
 .product-card img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   padding: 10px 0px;
 }
@@ -132,5 +136,5 @@ footer {
   justify-content: center;
   align-items: center;
   border: 1px solid white;
-  height: 10vh;
+  padding: 15px;
 }
