@@ -14,14 +14,14 @@ body {
   grid-template-columns: 0.5fr 1fr 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-    "nav nav nav nav"
+    "header header header header"
     "aside grilla grilla grilla"
     "footer footer footer footer";
   height: 100vh;
 }
 
-nav {
-  grid-area: nav;
+header {
+  grid-area: header;
   background-color: rgb(75, 220, 186);
   color: white;
   display: flex;
@@ -31,8 +31,14 @@ nav {
   /* padding: 20px 20px; */
   border: 1px solid white;
 }
-nav h3 {
+
+header h1 {
+  font-size: 24px;
+}
+
+header h3 {
   color: rgb(173, 247, 99);
+  font-size: 18px;
 }
 
 .barra_ofertas {
